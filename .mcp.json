@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "arahkaii": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://arahkaii.com/wp-json/mcp/v1/http"],
+      "env": {
+        "AUTH_HEADER": "Bearer ${ARAHKAII_TOKEN}"
+      }
+    },
+    "blotato": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.blotato.com/mcp"],
+      "env": {
+        "AUTH_HEADER": "blotato-api-key: ${BLOTATO_API_KEY}"
+      }
+    }
+  }
+}

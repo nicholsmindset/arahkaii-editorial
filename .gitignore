@@ -1,0 +1,48 @@
+# Secrets — never commit
+.env
+.env.*
+*.env
+secrets/
+tokens/
+*.token
+*.key
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs (run-log.md is committed, transient logs are not)
+*.log
+logs/
+tmp/
+
+# Build artifacts
+node_modules/
+dist/
+build/
+.next/
+
+# Local-only scratch
+SCRATCH.md
+scratch/
+local/
+.local/
+
+# Python (for any helper scripts)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Backups
+*.bak
+*.backup
