@@ -35,6 +35,26 @@ Before reviewing, load:
 
 A draft passes review only when it passes ALL checks. A single failure on any check = revise.
 
+### Check 0 — Structural integrity (runs BEFORE all other checks)
+
+This check catches concatenated content — the single most common generation failure mode, where multiple separate AI drafts are merged into one post without editorial curation. Concatenated content cannot be fixed by editing; it must be re-drafted.
+
+Scan the entire draft for:
+
+**H1 tags in post_content.** WordPress sets the H1 from post_title automatically. Any `<h1>` tag inside post_content is a structural SEO error. One H1 in content = fail.
+
+**"---" separators or empty `##` headings mid-content.** These are concatenation seams — they appear where one generated article ends and another begins. Any separator = fail.
+
+**Duplicate H2 headings.** If the same H2 (or near-identical phrasing) appears more than once, multiple drafts were merged. Duplicate = fail.
+
+**Multiple introduction or conclusion blocks.** Each article has exactly one opening and one closing. If the content reads as if it restarts or concludes more than once, it is concatenated. Multiple intros/outros = fail.
+
+**Multiple title variants appearing as headings mid-content.** If the article title (or a close variant) appears again as an H1 or bold heading partway through, a second article was appended. Any recurrence = fail.
+
+**Word count exceeding 3,500 words.** Standard features are 1,800-2,200 words. Long features 2,800-3,500. If the draft exceeds 3,500 words, it almost certainly contains appended content. Over-ceiling = fail.
+
+**Auto-reject rule:** If Check 0 fails on ANY criterion, do not proceed to Checks 1-10. Return to editorial-writer with a specific diagnosis: "Concatenated content detected — [H1 in body / separator found at line X / duplicate H2 '[heading text]' / word count N]. Re-draft as a single editorial piece. Do not attempt to fix by deletion."
+
 ### Check 1 — Banned-phrase scan
 
 Scan the entire draft for every phrase in `brand-voice.md` section 2 banned list:

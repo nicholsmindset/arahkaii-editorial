@@ -46,6 +46,18 @@ Load skills/editorial-writer/SKILL.md and skills/arahkaii-internal-linking/SKILL
 
 Output format: Gutenberg block markup (preferred for arahkaii's Soledad theme) OR clean markdown if Gutenberg blocks aren't natural for the content. arahkaii:wp_create_post accepts both.
 
+HARD RULES FOR STEP 4 — VIOLATION = ABORT AND REDRAFT:
+
+1. ONE article only. Do not draft multiple versions, alternative angles, or revised attempts and append them together. One editorial argument, one draft. If the first draft doesn't meet the bar, revise it in place — do not append a second attempt below it.
+
+2. H1 tags are FORBIDDEN in post_content. WordPress automatically renders the H1 from post_title. Any H1 tag inside post_content creates a structural SEO error and signals concatenated content. Use H2 and H3 only.
+
+3. No "---" separators or empty "##" headings mid-content. These are concatenation markers. Their presence means multiple articles have been merged — which is a content failure, not a formatting choice.
+
+4. No FAQ sub-articles. If a FAQ section is appropriate for the piece, it consists of 4-6 Q&A pairs only. Each answer is 2-4 sentences. FAQ questions are NOT expanded into standalone articles with their own H1/H2 structure.
+
+5. Word count ceiling: target ±10% of the calendar entry's word count. Hard ceiling: 3,500 words for any article. If the draft exceeds the ceiling, cut before proceeding to Step 5. Over-long drafts are a sign of appended content — diagnose before cutting.
+
 STEP 5 — SEO OPTIMIZATION
 Load skills/seo-optimizer/SKILL.md. Generate:
 - rank_math_title (≤60 chars including " | arahkaii" suffix)
@@ -60,13 +72,23 @@ Load skills/seo-optimizer/SKILL.md. Generate:
 
 STEP 6 — EDITORIAL REVIEW
 Load skills/editorial-reviewer/SKILL.md. One full review pass:
+
+STRUCTURAL INTEGRITY CHECK (runs before all editorial checks — fail any = abort, do not publish):
+- No H1 tags anywhere in post_content
+- No "---" separators or empty "##" headings mid-content
+- No duplicate H2 headings (identical or near-identical wording appearing more than once)
+- No repeated introduction or conclusion blocks (each may appear exactly once)
+- No multiple title variants mid-content (e.g., same article title appearing again as an H1 halfway through)
+- Word count within target ±10% and does not exceed 3,500 words
+If any structural violation is present: STOP. Log to run-log.md. Do not attempt to fix concatenated content by deletion — the generation in Step 4 failed and must be re-run cleanly.
+
+EDITORIAL CHECKS (after structural integrity passes):
 - Scan for banned phrases (brand-voice.md section 2) — strip any that appear
 - Check opening paragraph against patterns in brand-voice.md section 7
 - Verify the article has a clear editorial argument, not a topic summary
-- Check word count meets the target (within 10%)
 - Verify cultural references are accurate (designer names, place names, terminology)
 - Confirm internal links read naturally in their sentences
-- If the review flags anything you cannot cleanly fix, log the issue to run-log.md but continue to publish — Robert reviews in WP admin before going live
+- If the review flags editorial issues you cannot cleanly fix, log the issue to run-log.md but continue to publish — Robert reviews in WP admin before going live
 
 STEP 7 — FEATURED IMAGE
 Load skills/featured-image-prompt/SKILL.md. Generate the image prompt for this article. Then:
@@ -114,6 +136,8 @@ Confirm:
 - Categories and tags resolved correctly
 - Thumbnail (featured image) attached
 - Permalink returns the expected URL shape
+- post_content word count is within target ±10% and does not exceed 3,500 words (if over, the Step 4 guard failed — log and email Robert before proceeding)
+- post_content contains no H1 tags (grep for "<h1" — any match = structural error, log and email Robert)
 
 If anything is missing or wrong, log to run-log.md with the specific failure and email Robert. Do not claim success without this verification.
 
