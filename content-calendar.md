@@ -21,7 +21,7 @@ Each topic is an H3 with metadata, angle brief, target keyword cluster, and pill
 
 ## Queue
 
-### 2026-05-20 | status:ready | pillar:fashion | words:1800
+### 2026-05-20 | status:drafted | wp_post_id:1767 | drafted:2026-05-19 | pillar:fashion | words:1800
 **Title:** The Quiet Renaissance of Korean Heritage Brands
 **Angle:** Songzio's Paris Fashion Week debut signals a generational shift — third-generation Korean designers are reframing hanbok craftsmanship as a luxury vocabulary, not a heritage curio. Trace the lineage from Lee Sang-bong's late-90s avant-garde to Songzio, Juun.J, Wooyoungmi, and Kim Hae-kyung. Cultural argument: Korean fashion is no longer "K-fashion" — it's just fashion, with Korean designers competing on the same terms as Saint Laurent and Dries Van Noten. Investment frame for collectors. Compare to Japanese designers' Paris breakthrough in the 1980s.
 **Target keywords:** korean fashion designers, songzio, k-fashion paris, korean heritage fashion, korean luxury brands

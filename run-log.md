@@ -9,3 +9,4 @@ Status values: `success`, `partial`, `failed`, `skipped`, `noop`
 ---
 
 2026-05-15T01:30:00+08:00 | repo-init | success | repo created, 24 files committed, MCP tested
+2026-05-19T01:13:43+00:00 | routine-1 | partial | drafted "The Quiet Renaissance of Korean Heritage Brands" | post_id:1767 | words:~1670 | pillar:fashion | NOTE: mwai_image failed — AI Engine API key not configured (ChatML Engine); featured image not attached; Robert to add manually. Internal links limited to category archives (url-database.md awaiting Routine 6 first run).
