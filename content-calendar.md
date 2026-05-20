@@ -21,7 +21,7 @@ Each topic is an H3 with metadata, angle brief, target keyword cluster, and pill
 
 ## Queue
 
-### 2026-05-20 | status:ready | pillar:fashion | words:1800
+### 2026-05-20 | status:hold | pillar:fashion | words:1800 | skipped:2026-05-20 | skip-reason:published post ID 1665 already exists at /korean-heritage-brands-renaissance/ — calendar not updated after prior publish; Robert to review
 **Title:** The Quiet Renaissance of Korean Heritage Brands
 **Angle:** Songzio's Paris Fashion Week debut signals a generational shift — third-generation Korean designers are reframing hanbok craftsmanship as a luxury vocabulary, not a heritage curio. Trace the lineage from Lee Sang-bong's late-90s avant-garde to Songzio, Juun.J, Wooyoungmi, and Kim Hae-kyung. Cultural argument: Korean fashion is no longer "K-fashion" — it's just fashion, with Korean designers competing on the same terms as Saint Laurent and Dries Van Noten. Investment frame for collectors. Compare to Japanese designers' Paris breakthrough in the 1980s.
 **Target keywords:** korean fashion designers, songzio, k-fashion paris, korean heritage fashion, korean luxury brands
@@ -30,7 +30,7 @@ Each topic is an H3 with metadata, angle brief, target keyword cluster, and pill
 
 ---
 
-### 2026-05-22 | status:ready | pillar:beauty | words:2000
+### 2026-05-22 | status:drafted | wp_post_id:1768 | drafted:2026-05-20 | pillar:beauty | words:2000
 **Title:** C-Beauty's Second Wave: Why Florasis, Flower Knows, and Joocyee Now Outsell K-Beauty in Southeast Asia
 **Angle:** Singapore Sephora's H1 2026 data shows Chinese beauty brands outpacing Korean for the first time. Florasis built it on TCM heritage and luxury packaging. Flower Knows on Y2K cuteness scaled to Bandung TikTok. Joocyee on dermatologist-grade formulation. The reframing: C-beauty isn't "the new K-beauty" — it's a different proposition entirely, built on craft and theatre rather than science and minimalism. Practical guide: where to actually buy each in Singapore.
 **Target keywords:** c-beauty brands, florasis, flower knows, joocyee, chinese makeup brands, c-beauty singapore
