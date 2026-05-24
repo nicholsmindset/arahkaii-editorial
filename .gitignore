@@ -46,3 +46,10 @@ venv/
 # Backups
 *.bak
 *.backup
+
+# Local revamp / bundle workspace — never commit
+arahkaii-skills-revamp/
+arahkaii-bundle.zip
+arahkaii-revamp-v2.zip
+arahkaii-skills-revamp-bundle.zip
+*.zip
