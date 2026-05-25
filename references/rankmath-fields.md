@@ -49,19 +49,28 @@ Canonical reference for every Rank Math meta key Routines write to. All keys go 
 | `rank_math_schema_HowTo` | For instructional pieces (rare for arahkaii) |
 | `rank_math_rich_snippet` | Schema type identifier: `article`, `blog-posting`, `faq-page`, etc. |
 
-### Default Article schema template
+### CRITICAL: How to write schema correctly
+
+**DO NOT** pass `rank_math_schema_BlogPosting` as a raw JSON string or as a standard JSON-LD object. Rank Math's JS will crash with `TypeError: Cannot read properties of undefined (reading 'isPrimary')`.
+
+Rank Math stores schema internally as a **PHP array** (not JSON-LD) with a `metadata` wrapper. Pass it as a native object so WordPress serialises it correctly via `update_post_meta`.
+
+**Recommended approach for Routines:** Set `rank_math_rich_snippet: "blog-posting"` only — Rank Math auto-generates schema from its default template. Only write `rank_math_schema_BlogPosting` if you need to override specific fields.
+
+**If you must write `rank_math_schema_BlogPosting`, use this exact structure** (pass as object, never as a string):
 
 ```json
 {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "<post_title>",
-  "description": "<rank_math_description>",
-  "image": "<featured_image_url>",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "<permalink>"
+  "metadata": {
+    "title": "Blog Post",
+    "type": "template",
+    "isPrimary": true,
+    "reviewLocation": "custom"
   },
+  "@type": "BlogPosting",
+  "headline": "%seo_title%",
+  "description": "%seo_description%",
+  "url": "%url%",
   "author": {
     "@type": "Person",
     "name": "Robert Nichols",
@@ -70,15 +79,19 @@ Canonical reference for every Rank Math meta key Routines write to. All keys go 
   "publisher": {
     "@type": "Organization",
     "name": "arahkaii",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://arahkaii.com/logo.png"
-    }
+    "url": "%site_url%"
   },
-  "datePublished": "<ISO date>",
-  "dateModified": "<ISO date>"
+  "image": {
+    "@type": "ImageObject",
+    "url": "%post_thumbnail%"
+  },
+  "datePublished": "%date(Y-m-dTH:i:sP)%",
+  "dateModified": "%modified(Y-m-dTH:i:sP)%",
+  "mainEntityOfPage": "%url%"
 }
 ```
+
+Rank Math replaces `%seo_title%`, `%url%`, `%post_thumbnail%`, `%date(...)%` etc. at render time. Do not hardcode post-specific values into this field.
 
 ---
 
@@ -152,6 +165,9 @@ Check *Rank Math → General Settings → Others → Custom Fields* is enabled. 
 
 **Title truncated in SERP.**
 Google truncates around 600px. 60 chars is the practical limit. " | arahkaii" suffix uses ~12 chars.
+
+**`TypeError: Cannot read properties of undefined (reading 'isPrimary')` in WP admin.**
+Caused by writing `rank_math_schema_BlogPosting` as a raw JSON string instead of a PHP array. Fix: use `wp_update_post_meta` with the value as a native object (not stringified JSON) containing `metadata.isPrimary: true`. See the schema template above. Prevention: either omit the schema key entirely (set `rank_math_rich_snippet` only) or always pass the full object structure with the `metadata` wrapper.
 
 **Schema not rendering.**
 Verify `rank_math_rich_snippet` is set to match the schema type. `rank_math_schema_Article` alone isn't sufficient; the rich_snippet field tells Rank Math which schema to surface.
