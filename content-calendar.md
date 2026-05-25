@@ -32,7 +32,7 @@ Each topic is an H3 with metadata, angle brief, target keyword cluster, halal le
 
 ## Queue — 12-week launch schedule (48 articles)
 
-### 2026-05-25 | status:ready | pillar:dining | cluster:A | words:2400
+### 2026-05-25 | status:drafted | wp_post_id:1782 | drafted:2026-05-25 | pillar:dining | cluster:A | words:2400
 **Title:** Best Halal Fine Dining Restaurants in Singapore (2026)
 **Angle:** The anchor article for the entire Dining pillar. 12 restaurants minimum — every entry halal-certified, Muslim-owned, or operating an alcohol-free menu — across Tanjong Pagar, Bugis, Bukit Bintang-adjacent KL options. Lead with the room and the chef, not the price. Include omakase, Modern Malay, Peranakan-influenced fine dining, and Levantine. Halal status declared plainly in every entry. Editor's pick at the end.
 **Target keywords:** halal fine dining singapore, best halal restaurants singapore, halal fine dining 2026
