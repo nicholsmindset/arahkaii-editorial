@@ -76,14 +76,15 @@ Each topic is an H3 with metadata, angle brief, target keyword cluster, halal le
 
 ---
 
-### 2026-06-01 | status:ready | pillar:dining | cluster:A | words:2200
-**Title:** Mother's Day Halal Dining Singapore 2026
-**Angle:** Direct halal version of CNA Luxury's 8,537-visit/month winner. Twelve halal-certified or Muslim-owned restaurants for the Mother's Day brunch and lunch sitting (May 10, 2026 — but evergreen-friendly for the next Mother's Day too). Lead with the room ambience, the menu, and the booking note. Price-tier and reservation window for each. Pull-quote from one chef where access exists.
-**Target keywords:** mother's day halal dining singapore, mother's day halal brunch singapore, halal mother's day singapore 2026
-**SERP angle:** Seasonal-evergreen; highest-validated keyword in the cluster
-**Halal positioning:** Halal-positive
-**Internal links:** Halal fine dining anchor, Mother's Day gift guide (cross-pillar)
+### 2026-06-01 | status:ready | pillar:dining | cluster:A | words:2000
+**Title:** Halal Sunday Brunch Singapore: The Tatler-Bar Edit
+**Angle:** Evergreen reframe of what was scheduled here as the Mother's Day piece (Mother's Day 2026 passed on May 10, two weeks before this slot). Ten halal-certified or Muslim-owned restaurants doing serious Sunday brunch — Tanjong Pagar omakase brunch, Bukit Bintang weekend lunch, the new Levantine and Modern Malay rooms, plus two Peranakan-influenced fine dining picks. Halal status declared per entry. The piece functions year-round for "halal brunch singapore" + "best halal brunch" cluster, NOT a dated piece.
+**Target keywords:** halal brunch singapore, best halal brunch singapore, halal sunday brunch singapore, muslim friendly brunch singapore
+**SERP angle:** Evergreen cluster anchor; AI Overview eligible with question H2 "What counts as halal Sunday brunch?"
+**Halal positioning:** Halal-positive — every entry's status declared
+**Internal links:** Halal fine dining anchor, Modest Traveller cluster, JB cross-border brunch (sibling)
 **Featured image template:** D1 (single plate, dim restaurant)
+**Notes (2026-05-26 reschedule):** The Mother's Day Singapore 2026 angle was correctly scoped at calendar build time, but publishing 22 days *after* Mother's Day burns the seasonality. The Mother's Day version has been moved to 2027-04-25 below as `status:hold`. This slot keeps the same dining cluster + halal brunch SEO target without tying it to a dated holiday.
 
 ---
 
@@ -563,6 +564,22 @@ Each topic is an H3 with metadata, angle brief, target keyword cluster, halal le
 ## Refresh queue (added by Routine 6)
 
 *Items the quarterly sweep flags for refresh. Routine 1 picks these with the same `status:ready` semantics but writes refresh-angle drafts.*
+
+---
+
+## Held for future seasonal slots
+
+*Entries deliberately held until their seasonal window opens. Routine 1 skips `status:hold`. Move to `status:ready` and update the date 14-21 days before the target publish window.*
+
+### 2027-04-25 | status:hold | pillar:dining | cluster:A | words:2200
+**Title:** Mother's Day Halal Dining Singapore 2027
+**Angle:** Direct halal version of CNA Luxury's 8,537-visit/month Mother's Day Dining winner. Twelve halal-certified or Muslim-owned restaurants for the Mother's Day 2027 brunch and lunch sitting (Mother's Day 2027 falls on May 9). Lead with the room ambience, the menu, the booking note. Price-tier and reservation window for each. Pull-quote from one chef where access exists. Publish 14 days before the day; refresh the cover image and lede on May 1 each year for evergreen-renewable status.
+**Target keywords:** mother's day halal dining singapore, mother's day halal brunch singapore, halal mother's day singapore 2027
+**SERP angle:** Seasonal anchor — this is the single highest-validated Dining-cluster keyword from May 2026 Ahrefs (CNA Luxury's 8.5k/mo). Publish 2027-04-25, refresh annually.
+**Halal positioning:** Halal-positive — every entry's status declared
+**Internal links:** Halal fine dining anchor, Halal Sunday Brunch (2026-06-01 evergreen sibling), Mother's Day gift guide if it exists by then
+**Featured image template:** D1 (single plate, dim restaurant)
+**Notes (added 2026-05-26):** Originally scheduled at 2026-06-01 but Mother's Day 2026 passed May 10. The 2026-06-01 slot was reframed as an evergreen "Halal Sunday Brunch Singapore" piece. This held entry preserves the seasonal play for next year's window.
 
 ---
 

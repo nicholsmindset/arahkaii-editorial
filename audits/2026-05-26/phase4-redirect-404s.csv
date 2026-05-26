@@ -1,0 +1,10 @@
+source_url,status,proposed_target,rationale
+https://www.arahkaii.com/category/trending/,404,/,Old 'trending' category removed in 2026-05-24 revamp; redirect to homepage
+https://www.arahkaii.com/category/news/,404,/culture/,Old 'news' category; closest match is Culture pillar
+https://www.arahkaii.com/category/shop/,404,/style/,Old 'shop' category; Style pillar covers product/edit content
+https://www.arahkaii.com/wp-content/uploads/2025/11/affordable_living_vibrant_community_3rxdu.jpg,404,INVESTIGATE,Broken image ref; find which post embeds this and either re-upload or remove
+https://www.arahkaii.com/wp-content/uploads/2025/11/energy_efficient_cooling_solution_o82tz.jpg,404,INVESTIGATE,Same as above
+https://www.arahkaii.com/wp-content/uploads/2025/11/sustainable_cooling_reduces_emissions_egrqs.jpg,404,INVESTIGATE,Same as above
+https://www.arahkaii.com/wp-content/uploads/2025/11/soaring_cooling_costs_ahead_uftch.jpg,404,INVESTIGATE,Same as above
+https://www.arahkaii.com/category/the-journal/,404,/guides/,Old 'the-journal' category; Guides pillar covers service journalism
+https://www.arahkaii.com/from-foundation-to-house/,404,/living/,Orphaned page (no inbound links); Living pillar is closest
