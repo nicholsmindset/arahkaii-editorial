@@ -1,0 +1,31 @@
+# Disavow file for arahkaii.com — DRAFT 2026-05-26
+# Source: Ahrefs site-explorer-referring-domains top 25 by DR
+# These are PBN / link-spam networks with no editorial value
+# REVIEW EACH BEFORE submitting to Google Search Console > Disavow Tool
+# Format: 'domain:example.com' (one per line)
+# Note: grokipedia.com is excluded — it's an AI-search citation source (potentially valuable)
+#       prospeo.io and threadcurve.com excluded — appear legit
+
+# grokipedia.com  # REVIEW: AI-search citation source, may be valuable
+domain:buybacklinks.agency
+domain:itxoft-affordable-seo-solutions.site
+domain:rank-your.website
+domain:seoexpress.org
+domain:rankyour.website
+domain:rank-top.click
+domain:fiverr-seo-for-small-businesses.site
+domain:fiverr-cost-effective-seo.site
+domain:backlinker.shop
+domain:rank-now.website
+domain:seozora.com
+domain:rankxlinks.shop
+domain:linkrankpro.shop
+domain:ranklinkerpro.shop
+domain:bye.fyi
+domain:quero.party
+domain:creativeposts.top
+domain:atomizelink.icu
+domain:analyticshaven.top
+domain:byteshort.xyz
+domain:screenshots.wiki
+domain:optimizeflow.top
