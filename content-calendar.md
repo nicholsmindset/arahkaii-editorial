@@ -32,7 +32,7 @@ Each topic is an H3 with metadata, angle brief, target keyword cluster, halal le
 
 ## Queue — 12-week launch schedule (48 articles)
 
-### 2026-05-25 | status:ready | pillar:dining | cluster:A | words:2400
+### 2026-05-25 | status:published | wp_post_id:1782 | pillar:dining | cluster:A | words:2400
 **Title:** Best Halal Fine Dining Restaurants in Singapore (2026)
 **Angle:** The anchor article for the entire Dining pillar. 12 restaurants minimum — every entry halal-certified, Muslim-owned, or operating an alcohol-free menu — across Tanjong Pagar, Bugis, Bukit Bintang-adjacent KL options. Lead with the room and the chef, not the price. Include omakase, Modern Malay, Peranakan-influenced fine dining, and Levantine. Halal status declared plainly in every entry. Editor's pick at the end.
 **Target keywords:** halal fine dining singapore, best halal restaurants singapore, halal fine dining 2026
@@ -43,7 +43,7 @@ Each topic is an H3 with metadata, angle brief, target keyword cluster, halal le
 
 ---
 
-### 2026-05-27 | status:ready | pillar:style | cluster:D | words:1800
+### 2026-05-27 | status:drafted | wp_post_id:1913 | drafted:2026-05-29 | pillar:style | cluster:D | words:1800
 **Title:** The Rise of Modest Luxury in Asian Fashion
 **Angle:** The cultural manifesto for the Style pillar. The hijab is not the story — the silhouette is. Trace the modest luxury movement through three named designers (one from KL, one from Jakarta, one from Singapore), their cut philosophy, and how their work sits next to The Row and Lemaire on the global stage. Anchor with one Vogue Arabia reference and one Business of Fashion data point on modest-fashion-economy growth.
 **Target keywords:** modest luxury fashion, modest luxury asia, asian modest designers, modest fashion brands
